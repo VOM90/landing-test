@@ -1,0 +1,9 @@
+<div class="footer-app__menu">
+  <ul class="footer-app__container" *ngIf="menuLinks$ | async as menus;">
+    <li *ngFor="let link of menus" class="footer-app__menu-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+      <a class="footer-app__menu-item-link" [routerLink]="[link.url]">
+        {{link.name}}
+      </a>
+    </li>
+  </ul>
+</div>

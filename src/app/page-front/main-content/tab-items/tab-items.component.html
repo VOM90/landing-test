@@ -1,0 +1,12 @@
+<img class="app-main__tab-img" [src]="[item.img_url]">
+<div class="app-main__tab-title">
+  {{item.title}}
+</div>
+<div class="app-main__tab-description">
+  {{item.description}}
+</div>
+<div class="app-main__tab-more">
+  <a class="app-main__tab-more-link" [routerLink]="[item.url_link]">
+    {{item.text_btn}}
+  </a>
+</div>

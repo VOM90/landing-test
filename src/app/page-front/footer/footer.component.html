@@ -1,0 +1,17 @@
+<footer class="footer-app">
+  <div class="container">
+    <app-footer-info></app-footer-info>
+  </div>
+  <hr>
+  <div class="container">
+    <div class="row" *ngIf="footerInfoText$ | async as text;">
+      <div class="footer-app__footer-bottom" *ngFor="let item of text">
+        <span class="footer-app__copy">{{item.text}}</span>
+        <app-footer-menu></app-footer-menu>
+        <div class="footer-app__social-icons">
+          <app-footer-socials></app-footer-socials>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

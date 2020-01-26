@@ -1,0 +1,162 @@
+{
+  "header-menu": [
+    {
+      "url": "/case-studies",
+      "name": "Case Studies"
+    },
+    {
+      "url": "/services",
+      "name": "Services"
+    },
+    {
+      "url": "/expertise",
+      "name": "Expertise"
+    },
+    {
+      "url": "/about",
+      "name": "About"
+    },
+    {
+      "url": "/contact",
+      "name": "Contact"
+    }
+  ],
+  "footer-menu": [
+    {
+      "url": "/",
+      "name": "Home"
+    },
+    {
+      "url": "/case-studies",
+      "name": "Case Studies"
+    },
+    {
+      "url": "/services",
+      "name": "Services"
+    },
+    {
+      "url": "/expertise",
+      "name": "Expertise"
+    },
+    {
+      "url": "/about",
+      "name": "About"
+    },
+    {
+      "url": "/contact",
+      "name": "Contact"
+    }
+  ],
+  "promo": [
+    {
+      "text": "We work with forward businesses to create new digital platforms, products and services."
+    }
+  ],
+  "tabs": [
+    {
+      "name_tab": "All",
+      "about_services_title": "What We Do",
+      "about_services_description": "We launch different types of platforms and operating systems using distinguishes of every platform or operating system as adventage and a powerful tool.",
+      "tab_item": [
+        {
+          "img_url": "/assets/img/mobile_apps.png",
+          "title": "Mobile Apps",
+          "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients ",
+          "url_link": "/app",
+          "text_btn": "Learn More"
+        },
+        {
+          "img_url": "/assets/img/web_services.png",
+          "title": "Web Services",
+          "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients ",
+          "url_link": "/app",
+          "text_btn": "Learn More"
+        },
+        {
+          "img_url": "/assets/img/augmented_reality.png",
+          "title": "Augmented Reality",
+          "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients ",
+          "url_link": "/app",
+          "text_btn": "Learn More"
+        },
+        {
+          "img_url": "/assets/img/uiux_design.png",
+          "title": "UX/UI Design",
+          "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients ",
+          "url_link": "/app",
+          "text_btn": "Learn More"
+        },
+        {
+          "img_url": "/assets/img/development.png",
+          "title": "Development",
+          "description": "We are a nimble team of designers, developers, and strategists who are passionate about helping our clients ",
+          "url_link": "/app",
+          "text_btn": "Learn More"
+        }
+      ]
+    },
+    {
+      "name_tab": "Mobile App"
+    },
+    {
+      "name_tab": "Web Services"
+    },
+    {
+      "name_tab": "Augmented Reality"
+    },
+    {
+      "name_tab": "UX/UI Design"
+    },
+    {
+      "name_tab": "Development"
+    }
+  ],
+  "social-link": [
+    {
+      "url_links": "/facebook",
+      "class": "icon-facebook-icon"
+    },
+    {
+      "url_links": "/linkedin",
+      "class": "icon-linkedin-icon"
+    },
+    {
+      "url_links": "/google",
+      "class": "icon-google-icon"
+    },
+    {
+      "url_links": "/twitter",
+      "class": "icon-twitter-icon"
+    }
+  ],
+  "promo-text": [
+    {
+      "title": "Headquarters:",
+      "description": "11 E. Chavdar Street, Office 222,\nKiev, Ukraine 04335"
+    },
+    {
+      "title": "USA:",
+      "email": "ua.hr@trinetix.com",
+      "description": "+1 212-336-1440",
+      "telephone": "+1 212-336-1440"
+    },
+    {
+      "title": "Ukraine:",
+      "email": "ua.hr@trinetix.com",
+      "description": "+38 044-334-2341",
+      "telephone": "+38 044-334-2341"
+    }
+  ],
+  "copyright": [
+    {
+      "text": "© 2010-2015 Trinetix LLC"
+    }
+  ],
+  "about-us": [
+    {
+      "text": "We enjoy what we do.\nWorking with smart people at great projects.\nContact us if you want to work with us.",
+      "btn_text": "Contact Us",
+      "btn_url": "/about-us"
+    }
+  ]
+}

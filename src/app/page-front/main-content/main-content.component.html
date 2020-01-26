@@ -1,0 +1,22 @@
+<section class="app-main" *ngIf="tabs$ | async as tabs;">
+  <div class="app-main__container">
+    <ngb-tabset class="app-main__tab-area">
+      <ngb-tab class="app-main__tab-controls" *ngFor="let tab of tabs" title="{{tab.name_tab}}">
+        <ng-template ngbTabContent *ngIf="tab.about_services_title">
+          <div class="app-main__tab-content">
+            <div class="container-fluid after-link">
+              <div class="about-content">
+                <h1 class="content_title">{{tab.about_services_title}}</h1>
+                <p class="content_description">{{tab.about_services_description}}</p>
+              </div>
+            </div>
+            <div class="app-main__tab-container">
+              <app-tab-items class="app-main__tab-item" *ngFor="let content of tab.tab_item" [item]="content"></app-tab-items>
+            </div>
+          </div>
+        </ng-template>
+      </ngb-tab>
+    </ngb-tabset>
+  </div>
+  <app-about-us></app-about-us>
+</section>

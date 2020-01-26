@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="about-app" *ngIf="aboutUs$ | async as aboutUs;">
+    <div class="container">
+      <div class="about-app__container-content" *ngFor="let text of aboutUs">
+        <div class="about-app__content">{{text.text}}</div>
+        <div class="about-app__content-btn">
+          <a [routerLink]="[text.btn_url]">{{text.btn_text}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="header__menu">
+  <ul class="header__container" *ngIf="links$ | async as menus;">
+    <li *ngFor="let link of menus" class="header__menu-item" routerLinkActive="active">
+      <a class="header__menu-item-link" [routerLink]="[link.url]">
+        {{link.name}}
+      </a>
+    </li>
+  </ul>
+</div>

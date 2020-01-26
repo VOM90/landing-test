@@ -1,0 +1,14 @@
+<div class="footer-app__info-container" *ngIf="text$ | async as texts;">
+  <div class="footer-app__info-item" *ngFor="let text of texts">
+    <div class="footer-app__info-title">{{text.title}}</div>
+    <div class="footer-app__info-text">
+      <a class="footer-app__info-email" href="{{text.email}}">{{text.email}}</a>
+      <span *ngIf="text.telephone; else noPhone">
+         <a class="footer-app__info-telephone" href="tel:{{text.telephone}}">{{text.description}}</a>
+      </span>
+      <ng-template #noPhone>
+        <span>{{text.description}}</span>
+      </ng-template>
+    </div>
+  </div>
+</div>

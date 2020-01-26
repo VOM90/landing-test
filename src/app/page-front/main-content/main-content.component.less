@@ -1,0 +1,261 @@
+@medium:~"only screen and (max-width: 1024px)";
+@phone:~"only screen and (max-width: 425px)";
+@iphone:~"only screen and (max-width: 375px)";
+@phone_small:~"only screen and (max-width: 320px)";
+.app-main{
+  &__container{
+    position: relative;
+    outline: none;
+    &:before{
+      position: absolute;
+      top:0px;
+      height:60px;
+      width: 100%;
+      z-index: -1;
+      content: '';
+      background-color: #00172b;
+      border-top: 1px solid #003561;
+      @media @phone{
+        height: 62px;
+      }
+    }
+  }
+  &__tab-area{
+    ::ng-deep.nav-tabs{
+      max-width: 1200px;
+      width: 100%;
+      border:none;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      @media @phone{
+        flex-wrap: nowrap;
+        padding-left: 0px;
+        height: 65px;
+        overflow: auto;
+      }
+    }
+    ::ng-deep{
+      .nav-item {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .nav-link{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: #ffffff;
+          background: transparent;
+          border:none;
+          text-transform: uppercase;
+          outline: none;
+          padding: 0px 20px;
+          height: 100%;
+          font-family: 'DecimaNovaProBold', sans-serif;
+          font-size: 14px;
+          @media @phone{
+            white-space: nowrap;
+          }
+          &.active{
+            color:#00abff;
+            border-bottom: 4px solid #00abff;
+          }
+        }
+      }
+    }
+  }
+  &__tab-controls{
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    .nav-pills{
+      .nav-item{
+        margin-right: 40px;
+        outline: none;
+        &.active{
+          a{
+            color:#00abff;
+            font-size: 14px;
+            outline: none;
+          }
+          border-bottom: 4px solid #00abff;
+        }
+      }
+    }
+  }
+  &__tab_links{
+    color:white;
+    cursor: pointer;
+    min-width: 64px;
+    font-size: 14px;
+    outline: none;
+    text-align: center;
+    display: block;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    &:hover{
+      text-decoration: none;
+      color:white;
+    }
+  }
+  &__tab-content{
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 60px;
+  }
+  &__tab-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin: 80px auto;
+    max-width: 1200px;
+    padding-top: 100px;
+    @media @phone{
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+  &__tab-item{
+    max-width: 530px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 20px 60px 20px;
+    &:last-child{
+      margin: 120px 20px 60px 20px;
+      @media @phone{
+        margin: 0px;
+      }
+    }
+    @media @medium{
+      max-width: 440px;
+    }
+    @media @phone{
+      margin: 0px 0px 60px 0px;
+    }
+  }
+  ::ng-deep .nav-fill .nav-link.active {
+    cursor: pointer;
+    min-width: 64px;
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+    border-radius: 0px;
+    display: block;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+  }
+  ::ng-deep {
+    .nav-pills{
+      list-style: none;
+      display: flex;
+      margin: 0 auto;
+      outline: none;
+      flex-wrap: wrap;
+      max-width: 1140px;
+      background-color: #00172b;
+      border-bottom: 1px solid #003561;
+    }
+    .nav-pills{
+      .nav-link{
+        margin-right: 40px;
+        text-transform: uppercase;
+        color:white;
+        outline: none;
+        min-width: 64px;
+        background-color: transparent;
+        font-size: 14px;
+        &.active{
+          color: #20a8d8;
+          border-bottom: 2px solid #20a8d8;
+          cursor: pointer;
+          min-width: 64px;
+          outline: none;
+          background-color: transparent;
+          font-size: 14px;
+          text-align: center;
+          border-radius: 0px;
+          display: block;
+          padding-bottom: 25px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  ::ng-deep.tab-content{
+    margin: 0 auto;
+    width: 100%;
+    .about-content{
+      max-width: 900px;
+      margin: 0 auto;
+      padding-top: 0;
+      text-align: center;
+      @media @phone{
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+    }
+    .after-link {
+      position: relative;
+      width: 100%;
+      padding: 0px;
+      &:after{
+        position: absolute;
+        bottom: -80px;
+        height:25px;
+        background-size: 100%;
+        background-position: center;
+        width: 100%;
+        background-image: url("/assets/img/Line.png");
+        background-repeat: no-repeat;
+        z-index: -1;
+        content: '';
+        @media @phone{
+          background-size: cover;
+          background-position: center;
+          top: calc(~"180px +  80px");
+          height: 20px;
+        }
+        @media @iphone{
+          top: calc(~"180px +  120px");
+        }
+        @media @phone_small{
+          top: calc(~"180px +  80px");
+        }
+      }
+    }
+    .content_title{
+      font-size: 54px;
+      color: #105788;
+      width: 100%;
+      font-family: "PT Serif", sans-serif;
+      text-align: center;
+      @media @phone{
+        font-size: 34px;
+      }
+    }
+    .content_description{
+      padding-top: 40px;
+      font-size: 28px;
+      line-height: 38px;
+      font-family: 'DecimaNovaProLight', sans-serif;
+      color: #000000;
+      text-align: center;
+      @media @phone{
+        font-size: 20px;
+      }
+      @media @phone_small{
+        padding-top: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<ul class="footer-app__social-link-container"  *ngIf="links$ | async as links;">
+  <li class="footer-app__social-item" *ngFor="let link of links" >
+    <a class="footer-app__social-link {{link.class}}" href="{{link.url_links}}">
+    </a>
+  </li>
+</ul>

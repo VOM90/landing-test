@@ -1,0 +1,46 @@
+@medium:~"only screen and (max-width: 1095px)";
+@mobile_lg:~"only screen and (max-width: 820px)";
+@phone:~"only screen and (max-width: 425px)";
+.footer-app{
+  background-color: #00172b;
+  border-top: 4px solid #00abff;
+  &__footer-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 93px;
+    width: 100%;
+    @media @phone{
+      min-height: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &__copy{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-right: 129px;
+    font-family: 'DecimaNovaProLight', sans-serif;
+    @media @medium{
+      margin-right: 70px;
+    }
+    @media @phone{
+      order:2;
+      padding-top: 20px;
+    }
+  }
+  &__social-icons{
+    height: 100%;
+    @media @phone{
+      height: auto;
+      order: 1;
+    }
+  }
+  hr{
+    border-top: 1px solid #003561;
+    margin: 0px;
+    padding: 0px;
+  }
+}

@@ -1,0 +1,47 @@
+@phone_small:~"only screen and (max-width: 320px)";
+.app-main{
+  &__tab-img{
+    max-width: 100%;
+  }
+  &__tab-title{
+    font-family: "PT Serif", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #00abff;
+    text-align: center;
+    padding-top: 33px;
+    @media @phone_small{
+      font-size: 28px;
+    }
+  }
+  &__tab-description{
+    font-size: 24px;
+    line-height: 34px;
+    color: #000000;
+    font-family: 'DecimaNovaProLight', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__tab-more{
+    max-width: 176px;
+    height: 32px;
+    width: 100%;
+  }
+  &__tab-more-link{
+    font-size: 16px;
+    color: #00abff;
+    font-family: 'DecimaNovaProLight', sans-serif;
+    text-align: center;
+    display: block;
+    border: 1px solid #00abff;
+    border-radius: 16px;
+    transition: all 0.5s ease;
+    line-height: 32px;
+    &:hover{
+      background-color: #00abff;
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}

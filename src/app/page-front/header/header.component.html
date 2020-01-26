@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="container">
+    <div class="header__row">
+      <div class="col-lg-2 col-md-2 col-xs-10">
+        <div class="header__logo">
+          <a class="header__logo-link" href="#">
+            <img src="/assets/img/logo.png">
+          </a>
+        </div>
+      </div>
+      <div class="header__mobile-item" (click)="mobileMenu()">
+        <span class="header__mobile-icons-menu"></span>
+      </div>
+      <div class="col-lg-10 col-md-10 col-xs-12 col-xs-fluid" [ngClass]="showMobileMenu ? 'show':'hidden'">
+        <app-nav-menu></app-nav-menu>
+      </div>
+    </div>
+  </div>
+</header>
